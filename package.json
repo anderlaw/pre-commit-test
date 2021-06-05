@@ -5,19 +5,15 @@
     "main": "index.js",
     "scripts": {
         "start": "echo '123123'",
-        "do-prettier": "npx prettier --write . && exit 0",
+        "do-prettier": "npx prettier --write .",
         "check-code-style": "npx prettier --check ."
-    },
-    "pre-commit": {
-        "run": [
-            "do-prettier",
-            "check-code-style"
-        ]
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "husky": "^6.0.0",
+        "lint-staged": "^11.0.0",
         "pre-commit": "^1.2.2",
         "prettier": "2.3.0"
     }
