@@ -6,7 +6,8 @@
     "scripts": {
         "start": "echo '123123'",
         "do-prettier": "npx prettier --write .",
-        "check-code-style": "npx prettier --check ."
+        "check-code-style": "npx prettier --check .",
+        "prepare": "husky install"
     },
     "keywords": [],
     "author": "",
@@ -14,18 +15,9 @@
     "devDependencies": {
         "husky": "^6.0.0",
         "lint-staged": "^11.0.0",
-        "pre-commit": "^1.2.2",
         "prettier": "2.3.0"
     },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
     "lint-staged": {
-        "*.{js,css,json,md}": [
-            "npx prettier --write",
-            "git add"
-        ]
+        "*.{js,css,md}": "prettier --write"
     }
 }
