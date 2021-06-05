@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start":"echo '123123'",
+        "start": "echo '123123'",
         "prettier": "npx prettier --write ."
     },
     "pre-commit": {
