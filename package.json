@@ -4,12 +4,13 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "prettier":"npx prettier --write .",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "prettier": "npx prettier --write ."
     },
-    "pre-commit": [
-      "prettier"
-    ],
+    "pre-commit": {
+        "run": [
+            "prettier"
+        ]
+    },
     "keywords": [],
     "author": "",
     "license": "ISC",
