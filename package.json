@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "echo '123123'",
-        "do-prettier": "npx prettier --write .",
+        "do-prettier": "npx prettier --write . && exit 0",
         "check-code-style": "npx prettier --check ."
     },
     "pre-commit": {
