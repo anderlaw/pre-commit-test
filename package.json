@@ -6,7 +6,7 @@
     "scripts": {
         "start": "echo '123123'",
         "prettier": "npx prettier --write .",
-        "check":"npx prettier --check ."
+        "check": "npx prettier --check ."
     },
     "pre-commit": {
         "run": [
