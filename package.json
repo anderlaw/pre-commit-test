@@ -5,13 +5,13 @@
     "main": "index.js",
     "scripts": {
         "start": "echo '123123'",
-        "prettier": "npx prettier --write .",
-        "check": "npx prettier --check ."
+        "do-prettier": "npx prettier --write .",
+        "check-code-style": "npx prettier --check ."
     },
     "pre-commit": {
         "run": [
-            "prettier",
-            "check"
+            "do-prettier",
+            "check-code-style"
         ]
     },
     "keywords": [],
